@@ -1,0 +1,290 @@
+ body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 100;
+  background-color: #c49b63;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100hv;
+  box-sizing: border-box;
+}
+.intro {
+    position: relative;
+}
+.intro-img{
+    height: 100vh;
+    object-fit: cover;
+}
+.heading {
+    position: absolute;
+    color: #a27b43;
+    top: 68%;
+    left: 3%;
+}
+h1 {
+    letter-spacing: 5px;
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+.p-i {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-size: 30px;
+}
+    nav {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1000;
+    }
+    .logo {
+        color: #c49b63;
+        font-size: 22px;
+        font-weight: bold;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li {
+        margin-left: 25px;
+    }
+    nav ul li a {
+       text-decoration: none; 
+       color: #c49b63;
+       font-size: 18px;
+       transition: color 0.3 ease;
+       position: relative;
+       padding-bottom: 5px;
+       display: inline-block;
+    }
+    nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #c49b63;
+        transition: width 0.3s ease;
+    }
+    nav ul li a:hover {
+        color: #c49b63;
+    }
+    nav ul li a:hover::after {
+        width: 100%;
+    }
+.my-photo {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 50px;
+    border:px solid black ;
+    box-shadow: 5px 15px 25px black;
+    transition: all 0.4s ease;
+}
+.my-photo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+.about-me {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 50px;
+}
+.heading-2 {
+    font-size: 4.5rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:400 ;
+    font-style: normal;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.about-me p {
+    font-size: 1.4rem;
+    line-height:1.6;
+    font-weight: 350;
+}
+.heading-3 {
+    text-align: center;
+    font-size: 4rem;
+}
+.Skills {
+    flex: 1;
+}
+.Skills img {
+      height: 250px;
+      width: 350px;
+      float: left;
+      margin-right: 20px;
+      object-fit: cover;
+      border-radius: 5px;
+}
+.f-s {
+    width: 45%;
+    float: left;
+    margin: 20px;
+    margin-top: 100px;
+}
+.s-s {
+    width: 45%;
+    float: right;
+    margin: 20px;
+    margin-top: 100px;
+}
+.Skills h3 {
+    font-size: 2rem;
+    margin-top: 0%;
+}
+.Skills p {
+    letter-spacing: 2px;
+    line-height: 150%;
+}
+.g-i-t {
+    text-align: center;
+    margin: 150px;
+}
+.heading-4 {
+    font-size: 5rem;
+    margin: 100px;
+}
+.btn {
+    height: 150px;
+    width: 250px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.p-s {
+    margin-bottom: 80px;
+}
+.btn-c {
+    background-color: black;
+    width: 100%;
+    display: block;
+    margin-top: auto;
+    padding: 12px 30px;
+    text-align: center;
+    padding-top: 60px;
+    box-sizing: border-box;
+}
+.btn-c a {
+    color: white;
+    margin: 40px;
+    text-decoration: none;
+}
+.btn-c p {
+    color: white;
+    text-align: right;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+
+@media (max-width: 480px) {
+    .Skills {
+        height: 100vh;
+    }
+    .Skills h3 {
+        padding: 10px;
+        margin-top: 280px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+
+    }
+    .f-s, .s-s {
+        width: 97% ;
+        padding:5px;
+        float: none;
+        margin: 20px 0;
+    }
+    .f-s p {
+        width: 96%;
+        padding-left: 5px;
+    }
+    .s-s p {
+        width: 96%;
+        padding-left: 5px;
+    }
+    .Skills img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 480px) {
+    .g-i-t h2 {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+    .g-i-t {
+        margin: 0;
+        margin: 150px 0;
+        margin-top: 50px;
+    }
+    .btn-c a {
+        margin:15px;
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    .btn-c {
+        padding: 0%;
+        padding-top: 30px;
+    }
+    .btn-c p {
+        font-size: 10px;
+        margin: 0;
+        padding:20 ;
+        padding-top:30px;
+        margin-top: 20px;
+    }
+    .heading-2 {
+        font-size: 2.5rem;
+    }
+    .my-photo {
+        width: 250px;
+        height: 250px;
+    }
+    .intro-img {
+        height: 95vh;
+        object-fit: cover;
+        margin-top: -20px;
+        max-width: 100%;
+    }
+    nav {
+        flex-direction: column !important;
+        padding: 15px 10px !important;
+        align-items: center !important;
+    }
+    nav ul {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 16px !important;
+        margin-top: 10px !important;
+        padding: 0 !important;
+    }
+    nav ul li {
+        margin-left: 0 !important;
+    }
+}
+
